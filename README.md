@@ -1,15 +1,13 @@
-# eleventy-base-blog v8
+# eleventy-base-blog-with-spin v8
 
-A starter repository showing how to build a blog with the [Eleventy](https://www.11ty.dev/) site generator (using the [v2.0 release](https://www.11ty.dev/blog/eleventy-v2/)).
-
-[![Netlify Status](https://api.netlify.com/api/v1/badges/802669dd-d5f8-4d49-963d-6d57b257c2a2/deploy-status)](https://app.netlify.com/sites/eleventy-base-blog/deploys)
+A starter repository showing how to build a blog with the [Eleventy](https://www.11ty.dev/) site generator (using the [v2.0 release](https://www.11ty.dev/blog/eleventy-v2/)) and Spin. Based on the original Eleventy starter.
 
 ## Getting Started
 
 1. Clone this Repository
 
 ```
-git clone https://github.com/11ty/eleventy-base-blog.git my-blog-name
+git clone https://github.com/radu-matei/eleventy-blog my-blog-name
 ```
 
 2. Navigate to the directory
@@ -40,7 +38,20 @@ Or build and host locally on a local development server:
 npx @11ty/eleventy --serve
 ```
 
-Or you can run [debug mode](https://www.11ty.dev/docs/debugging/) to see all the internals.
+## Running with Spin
+
+Now that you have built your blog, you can run it with Spin locally, or you can deploy it on Fermyon Cloud:
+
+```
+$ spin deploy
+Uploading 11ty version 0.1.0+rbaed27f6...
+Deploying...
+Waiting for application to become ready......... ready
+Available Routes:
+  web: https://11ty-0twfbjhd.fermyon.app (wildcard)
+```
+
+You can see a live instance of this blog running in Fermyon Cloud: https://11ty-0twfbjhd.fermyon.app/
 
 ## Features
 
@@ -77,21 +88,6 @@ Or you can run [debug mode](https://www.11ty.dev/docs/debugging/) to see all the
 	- `sitemap.xml`
 	- Zero-maintenance tag pages ([View on the Demo](https://eleventy-base-blog.netlify.app/tags/))
 	- Content not found (404) page
-
-## Demos
-
-- [Netlify](https://eleventy-base-blog.netlify.com/)
-- [GitHub Pages](https://11ty.github.io/eleventy-base-blog/)
-- [Remix on Glitch](https://glitch.com/~11ty-eleventy-base-blog)
-
-## Deploy this to your own site
-
-Deploy this Eleventy site in just a few clicks on these services:
-
-- [Get your own Eleventy web site on Netlify](https://app.netlify.com/start/deploy?repository=https://github.com/11ty/eleventy-base-blog)
-- If you run Eleventy locally you can drag your `_site` folder to [`drop.netlify.com`](https://drop.netlify.com/) to upload it without using `git`.
-- [Get your own Eleventy web site on Vercel](https://vercel.com/import/project?template=11ty%2Feleventy-base-blog)
-- Read more about [Deploying an Eleventy project](https://www.11ty.dev/docs/deployment/) to the web.
 
 ### Implementation Notes
 
