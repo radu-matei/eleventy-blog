@@ -1,0 +1,13 @@
+spin_version = "1"
+authors = ["Radu Matei <radu@fermyon.com>"]
+description = ""
+name = "11ty"
+trigger = { type = "http", base = "/" }
+version = "0.1.0"
+
+[[component]]
+source = "spin_static_fs.wasm"
+id = "web"
+files = [{ source = "_site", destination = "/" }]
+[component.trigger]
+route = "/..."
